@@ -213,7 +213,6 @@ public class MainActivity extends AppCompatActivity {
             hashMap.put("tv_id", String.valueOf(track.getId()));
             hashMap.put("start_place", track.getTrack_name() + "--" + track.getCreate_date());
             hashMap.put("current_place", track.getStrat_loc() + "到" + track.getEnd_loc());
-            System.out.println(track.getStrat_loc() + "-------------");
             data.add(hashMap);//将值传到data中，这个就是加载的数据
         }
         SimpleAdapter simpleAdapter = new SimpleAdapter(this, data, R.layout.list_item,
